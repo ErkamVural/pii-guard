@@ -1,0 +1,34 @@
+scan:
+  extensions:
+    - .py
+    - .txt
+    - .md
+    - .js
+    - .json
+    - .html
+    - .env
+    - .ts
+    - .yaml
+    - .yml
+
+llm:
+  enabled: false
+  provider: ollama
+  providers:
+    ollama:
+      base_url: "http://localhost:11434"
+      model: "llama3.2:3b"
+    openai:
+      base_url: "https://api.openai.com/v1"
+      model: "gpt-4o-mini"
+      api_key_env: "OPENAI_API_KEY"
+    anthropic:
+      model: "claude-haiku-4-5-20251001"
+      api_key_env: "ANTHROPIC_API_KEY"
+    openai_compatible:
+      base_url: "http://localhost:8080/v1"
+      model: "your-model-name"
+      api_key_env: ""
+  timeout: 30
+  temperature: 0.0
+  seed: 42

@@ -1,0 +1,5 @@
+pyyaml>=6.0.1
+requests>=2.31.0
+python-dotenv>=1.0.0
+# Optional — only needed if llm.provider is set to "anthropic":
+# anthropic>=0.25.0

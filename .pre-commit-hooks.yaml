@@ -1,0 +1,6 @@
+- id: pii-guard
+  name: PII Guard
+  description: Scans staged files for sensitive data (PII) using regex and optional LLM analysis.
+  entry: pii-guard
+  language: python
+  pass_filenames: false

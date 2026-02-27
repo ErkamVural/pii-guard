@@ -1,0 +1,32 @@
+{
+  "patterns": [
+    {
+      "name": "TCKN",
+      "pattern": "\\b([1-9][0-9]{10})\\b"
+    },
+    {
+      "name": "Credit Card (Compact)",
+      "pattern": "\\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12})\\b"
+    },
+    {
+      "name": "Credit Card (Spaced)",
+      "pattern": "\\b(?:4[0-9]{3}|5[1-5][0-9]{2}|3[47][0-9]{1}|6011)(?:\\s[0-9]{4}){3}\\b"
+    },
+    {
+      "name": "API Key (Keyword-based)",
+      "pattern": "(?i)(?:api[_-]?key|secret|token|password|passwd|pwd)\\s*[:=]\\s*[\"']?([A-Za-z0-9_\\-]{16,})[\"']?"
+    },
+    {
+      "name": "API Key (sk/pk Prefix)",
+      "pattern": "\\b(?:sk|pk|rk|ak)-[A-Za-z0-9]{20,}\\b"
+    },
+    {
+      "name": "Email Address",
+      "pattern": "\\b[A-Za-z0-9._%+\\-]+@[A-Za-z0-9.\\-]+\\.[A-Z|a-z]{2,}\\b"
+    },
+    {
+      "name": "IBAN",
+      "pattern": "\\b[A-Z]{2}[0-9]{2}[A-Z0-9]{4}[0-9]{7}(?:[A-Z0-9]?){0,16}\\b"
+    }
+  ]
+}
